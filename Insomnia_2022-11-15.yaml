@@ -1,0 +1,206 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-15T22:21:05.704Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_34a034a2fc12442cac77d9bf536b5bdc
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668550660708
+    created: 1668451623103
+    url: localhost:5000/user
+    name: create user
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_name": "ricardo",
+        	"email": "ricardo4@gmail.com",
+        	"password": "12345678",
+        	"person": {
+        		"name": "Ricardo Jorge Rocha do Rosario",
+        		"birth": "1999/04/23",
+        		"gender_id": "1"
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_75473cf46bfe4d31bc8954f0298ac139
+    authentication: {}
+    metaSortKey: -1668451623103
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_958e82fc3528421892e33ef93c253202
+    parentId: null
+    modified: 1668451598120
+    created: 1668451598120
+    name: User_Api
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_a1a64fbeb3e740a1b928f210a748e648
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668522009253
+    created: 1668451608919
+    url: localhost:5000/user/log_in
+    name: log in
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "ricardo4@gmail.com",
+        	"password": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_456cf5173e5940688f0bad6cd5e86bce
+      - id: pair_dacf1daf283e4463acabfe01d9ffe22c
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668451608919
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cb2fc93f2ae2428780e4894d94c8efda
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668522016501
+    created: 1668451607451
+    url: localhost:5000/user
+    name: get user info
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_364297f939ee48619414079e8f01717c
+        name: authorization
+        value: bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTY2ODUyMjAwMSwiZXhwIjoxNjY5MTI2ODAxfQ.v7VrHZAVCS-jWEjWb-CgXkjsVepzIdvkRFmfUh3ILsI
+        description: ""
+      - id: pair_0111e68c101641a1a5d35c3695e8480c
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1668451607451
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7014473faad847309f7ab8ecdef8d411
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668520245848
+    created: 1668451605771
+    url: localhost:5000/user
+    name: edit user info
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_name": "Ricardino",
+        	"email": "",
+        	"password": "",
+        	"person": {
+        		"name": "Ricardo",
+        		"birth": "",
+        		"gender_id": ""
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_151fc476d90741f0ab60fa92b4bd875f
+      - id: pair_82a7acf0e8b1408a8e3e10e71eafe12d
+        name: authorization
+        value: bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjY4NTIwMjEzLCJleHAiOjE2NjkxMjUwMTN9.IsNKfh-5dvx_ka2M2wXNM6cmUJmxIP-JkGD4W2AriBw
+        description: ""
+    authentication: {}
+    metaSortKey: -1668451605771
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2813629fcf8c469583be088cfa9b11f9
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668520251745
+    created: 1668451603273
+    url: localhost:5000/user/Yes
+    name: New Request
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_b90046d7fe754211a29abc4e8d22a4eb
+        name: authorization
+        value: bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjY4NTIwMjEzLCJleHAiOjE2NjkxMjUwMTN9.IsNKfh-5dvx_ka2M2wXNM6cmUJmxIP-JkGD4W2AriBw
+        description: ""
+    authentication: {}
+    metaSortKey: -1668451603273
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_f9970ee9477ce434d79514eb71844e5e0a8958fa
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668451598133
+    created: 1668451598133
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1668451598133
+    _type: environment
+  - _id: jar_f9970ee9477ce434d79514eb71844e5e0a8958fa
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668451598136
+    created: 1668451598136
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_38f30b470eb44e90bdd0fcc0558576e5
+    parentId: wrk_958e82fc3528421892e33ef93c253202
+    modified: 1668451598123
+    created: 1668451598123
+    fileName: User_Api
+    contents: ""
+    contentType: yaml
+    _type: api_spec
